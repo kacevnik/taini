@@ -6,6 +6,9 @@ jQuery(function($) {
 		$('.postdate').hide();
 	}
 
+	$('.prev_article a').html('<i class="fa fa-arrow-circle-left"></i>'+$('.prev_article a').text());
+	$('.next_article a').html($('.next_article a').text()+'<i class="fa fa-arrow-circle-right"></i>');
+
 	$('.postmeta').hide();
 	$('.nocomments').hide();
 

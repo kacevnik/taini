@@ -40,8 +40,10 @@ function kdv_jQuery(){
 
 function kdv_mainJS(){
     wp_enqueue_script( 'kdv_main_js', get_template_directory_uri() . '/js/main.js');
+    wp_enqueue_style( 'awesome', get_template_directory_uri().'/css/font-awesome.min.css' ); // шрифты
 
 }
+
 
 $themename = "Tainy";
 $shortname = str_replace(' ', '_', strtolower($themename));
