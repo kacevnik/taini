@@ -1,10 +1,20 @@
-jQuery(function($) {
+jQuery(document).ready(function ($) {
 	//Скрытие ненужных элементов
 	if($('.postdate').html().split('| ')[1] ){
 		$('.postdate').html($('.postdate').html().split('| ')[1]);
 	}else{
 		$('.postdate').hide();
 	}
+
+	$("a[href*='#']").bind("click", function(e){
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top
+		}, 500);
+		e.preventDefault();
+		return false;
+	});
+
 
 	$('.prev_article a').html('<i class="fa fa-arrow-circle-left"></i>'+$('.prev_article a').text());
 	$('.next_article a').html($('.next_article a').text()+'<i class="fa fa-arrow-circle-right"></i>');
