@@ -755,3 +755,13 @@ sidebar ul li li:hover, .sidebar ul li ul li:hover {
 .post_bottom h4{
 	font-size: 20px;
 }
+/*---- style for images in article ---*/
+.left_img{
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.right_img{
+	float: right;
+	margin: 0 0 10px 10px;
+}
