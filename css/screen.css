@@ -252,3 +252,22 @@ hr.space {background:#fff;color:#fff;}
 .clearfix, .container {display:block;}
 .clear {clear:both;}
 .hny{background: url(../images/hny.png)no-repeat top center; height: 89px;}
+
+.custom_images a{
+	width: 32px!important;
+	height: 32px;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	position: relative;
+	margin: 0 5px 0 0;
+}
+
+.custom_images a i{
+	position: absolute;
+	top: 5px;
+	left: 7px;
+}
