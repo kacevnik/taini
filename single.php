@@ -7,7 +7,7 @@
 						<?php while (have_posts()) : the_post(); ?>
                         <div class="postwrap">
 						<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-							<h2 class="title"><?php the_title(); ?></h2>
+							<h1 class="title"><?php the_title(); ?></h1>
 							<div class="postdate"><?php if (current_user_can('edit_post', $post->ID)) { ?> | <?php edit_post_link('Редактировать', '', ''); } ?></div>
 			
 							<div class="entry">
