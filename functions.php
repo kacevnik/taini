@@ -48,9 +48,11 @@ function kdv_jQuery(){
 }
 
 function kdv_mainJS(){
-    wp_enqueue_script( 'kdv_main_js', get_template_directory_uri() . '/js/main.js');
-    wp_enqueue_style( 'awesome', get_template_directory_uri().'/css/font-awesome.min.css' ); // шрифты
+    wp_enqueue_style ( 'awesome',     get_template_directory_uri().'/css/font-awesome.min.css' );    //шрифты
+    wp_enqueue_style ( 'fancybox',    get_template_directory_uri().'/css/jquery.fancybox.min.css' ); //стили Fancybox
 
+    wp_enqueue_script( 'fancybox',    get_template_directory_uri() . '/js/jquery.fancybox.min.js');  //подключение Fancybox
+    wp_enqueue_script( 'kdv_main_js', get_template_directory_uri() . '/js/main.js');                 //Основной файл скриптов
 }
 
 
