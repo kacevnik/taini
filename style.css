@@ -289,7 +289,7 @@ blockquote {
 	}
 	
 .post img {
-	max-width: 680px;
+	max-width: 600px;
 	}
 
 img.wp-smiley {
@@ -763,4 +763,9 @@ sidebar ul li li:hover, .sidebar ul li ul li:hover {
 .right_img{
 	float: right;
 	margin: 0 0 10px 10px;
+}
+
+.fancybox-image-wrap .fancybox-image{
+	max-width: 800px;
+	max-height: 600px;
 }

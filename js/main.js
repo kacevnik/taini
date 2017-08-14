@@ -15,6 +15,9 @@ jQuery(document).ready(function ($) {
 		return false;
 	});
 
+	$("[data-fancybox]").fancybox({
+		loop     : true
+	});
 
 	$('.prev_article a').html('<i class="fa fa-arrow-circle-left"></i>'+$('.prev_article a').text());
 	$('.next_article a').html($('.next_article a').text()+'<i class="fa fa-arrow-circle-right"></i>');
